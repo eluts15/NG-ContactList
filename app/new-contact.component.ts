@@ -5,10 +5,12 @@ import { Contact } from './contact.model';
   selector: 'new-contact',
   template: `
     <h1>Add New Contact</h1>
-      <input #firstName>
-      <input #lastName>
-      <input #phone>
-      <button (click)="submitForm(firstName.value, lastName.value, phone.value); firstName.value=''; lastName.value=''; phone.value='';">Add Contact</button>
+      <div>
+        <input #firstName>
+        <input #lastName>
+        <input #phone>
+        <button (click)="submitForm(firstName.value, lastName.value, phone.value); firstName.value=''; lastName.value=''; phone.value='';">Add Contact</button>
+      </div>
   `
 })
 
